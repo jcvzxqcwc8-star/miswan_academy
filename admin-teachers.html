@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a6b3c">
+
+  
+  <title>Teachers – Miswan Academy Admin</title>
+  <meta name="description" content="Miswan Quran Academy offers personalised 1-to-1 online Quran lessons: Tajweed, Hifz, Arabic, Islamic Studies and children's classes. Book your free trial today.">
+  <meta name="keywords" content="Quran lessons online, Tajweed, Hifz, Islamic Studies, Quran for beginners, online Quran teacher, Quran children">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jcvzxqcwc8-star.github.io/miswan_academy/admin-teachers">
+
+  
+  <meta property="og:title" content="Miswan Quran Academy">
+  <meta property="og:description" content="Personalised 1-to-1 Quran lessons online. Tajweed, Hifz, Arabic, Islamic Studies. Book your free trial.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jcvzxqcwc8-star.github.io/miswan_academy/admin-teachers">
+  <meta property="og:image" content="https://jcvzxqcwc8-star.github.io/miswan_academy/static/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Syne:wght@700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/dashboard.css"><style id="guard-style">body{visibility:hidden}</style>
+</head>
+<body data-page="admin-teachers">
+
+<div class="sidebar">
+  <a href="index.html" class="sidebar-logo" style="padding:1.2rem 1.5rem .5rem;display:flex;align-items:center;gap:.55rem;text-decoration:none">
+    <img src="static/images/logo.png" alt="Miswan" style="height:32px;border-radius:5px;flex-shrink:0">
+    <span style="font-family:'Syne',sans-serif;font-size:.98rem;font-weight:800;color:#fff">Miswan<span style="color:#c9a84c">Academy</span></span>
+  </a>
+  <div class="sidebar-role">Admin Panel</div>
+  <a href="admin.html"   class="nav-item "><span class="ni-icon">⊞</span> Dashboard</a>
+  <a href="admin-student-new.html"  class="nav-item "><span class="ni-icon">＋</span> Add Student</a>
+  <a href="admin-teachers.html"     class="nav-item active"><span class="ni-icon">👨‍🎓</span> Teachers</a>
+  <a href="admin-schedule.html"     class="nav-item "><span class="ni-icon">🗓</span> Schedule</a>
+  <a href="admin-bookings.html"     class="nav-item ">
+    <span class="ni-icon">📅</span> Bookings
+    
+  </a>
+  <a href="admin-testimonials.html" class="nav-item "><span class="ni-icon">⭐</span> Testimonials</a>
+  <a href="admin-messages.html"     class="nav-item ">
+    <span class="ni-icon">✉</span> Messages
+    
+  </a>
+  <hr class="sidebar-divider">
+  <a href="index.html" class="nav-item"><span class="ni-icon">🌐</span> View Website</a>
+  <div class="sidebar-bottom">
+    <div class="sidebar-user"></div>
+    <a href="#logout" class="sidebar-logout">← Log out</a>
+  </div>
+</div>
+<div class="dash-main">
+  <div class="topbar"><div><h1>Teachers</h1></div></div>
+  <div class="dash-content">
+    <div id="flash-slot" style="display:contents" data-alert-style=""></div>
+    <div class="box" style="margin-bottom:1.5rem"><div class="box-header"><h2>Add New Teacher</h2></div><div class="box-body">
+      <form method="POST" id="teacher-form">
+        <div class="form-grid-2">
+          <div class="form-group"><label>Full name *</label><input type="text" name="name" placeholder="Teacher's full name" required></div>
+          <div class="form-group"><label>Title / Qualifications</label><input type="text" name="title" placeholder="e.g. Hafiz, BA Islamic Studies, Ijazah holder"></div>
+          <div class="form-group"><label>Speciality (comma-separated)</label><input type="text" name="speciality" placeholder="e.g. Tajweed, Hifz, Arabic"></div>
+          <div class="form-group"><label>Experience</label><input type="text" name="experience" placeholder="e.g. 7 years"></div>
+          <div class="form-group col-span-2"><label>Bio</label><textarea name="bio" rows="3" placeholder="A short description of this teacher's background and teaching style…"></textarea></div>
+        </div>
+        <button type="submit" class="btn-primary-sm" style="margin-top:1rem">Add Teacher</button>
+      </form>
+    </div></div>
+    <div class="box"><div class="box-header"><h2>All Teachers</h2></div>
+      <div id="adm-teachers"></div>
+    </div>
+  </div>
+</div>
+
+<script src="static/js/main.js"></script>
+<script src="static/js/supabase.js"></script>
+<script src="static/js/config.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>

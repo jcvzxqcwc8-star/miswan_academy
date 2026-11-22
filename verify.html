@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1a6b3c">
+
+  
+  <title>Verify Login – Miswan Academy</title>
+  <meta name="description" content="Miswan Quran Academy offers personalised 1-to-1 online Quran lessons: Tajweed, Hifz, Arabic, Islamic Studies and children's classes. Book your free trial today.">
+  <meta name="keywords" content="Quran lessons online, Tajweed, Hifz, Islamic Studies, Quran for beginners, online Quran teacher, Quran children">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jcvzxqcwc8-star.github.io/miswan_academy/verify">
+
+  
+  <meta property="og:title" content="Miswan Quran Academy">
+  <meta property="og:description" content="Personalised 1-to-1 Quran lessons online. Tajweed, Hifz, Arabic, Islamic Studies. Book your free trial.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jcvzxqcwc8-star.github.io/miswan_academy/verify">
+  <meta property="og:image" content="https://jcvzxqcwc8-star.github.io/miswan_academy/static/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Syne:wght@700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/style.css">
+  
+</head>
+<body data-page="verify">
+
+<div style="min-height:100vh;background:linear-gradient(160deg,#070f0a,#112718);display:flex;align-items:center;justify-content:center;padding:2rem">
+  <div style="background:#111;border:1px solid rgba(201,168,76,.2);border-radius:16px;padding:2.5rem;width:100%;max-width:420px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+
+    <a href="index.html" style="display:flex;justify-content:center;margin-bottom:2rem;text-decoration:none">
+      <img src="static/images/logo.png" alt="Miswan" style="height:48px;border-radius:8px">
+    </a>
+
+    <div style="text-align:center;margin-bottom:2rem">
+      <div style="width:60px;height:60px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto .9rem;font-size:1.5rem">✉️</div>
+      <h2 style="font-family:'Syne',sans-serif;font-size:1.35rem;color:#fff;margin-bottom:.4rem">Check your email</h2>
+      <p style="color:rgba(255,255,255,.45);font-size:.85rem;line-height:1.6">
+        We sent a 6-digit code to<br>
+        <strong style="color:#c9a84c" id="verify-email"></strong>
+      </p>
+    </div>
+
+    <div id="flash-slot" style="display:contents" data-alert-style="margin-bottom:1rem;font-size:.83rem"></div>
+
+    <form method="POST" id="codeForm">
+      <div style="display:flex;gap:.6rem;justify-content:center;margin-bottom:1.75rem">
+        
+        <input type="text" name="d1" id="d1"
+          maxlength="1" inputmode="numeric" pattern="[0-9]"
+          style="width:44px;height:52px;text-align:center;font-size:1.4rem;font-weight:700;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);border-radius:8px;color:#fff;outline:none;transition:border-color .2s"
+          onfocus="this.style.borderColor='#c9a84c'"
+          onblur="this.style.borderColor='rgba(255,255,255,.15)'"
+          required>
+        
+        <input type="text" name="d2" id="d2"
+          maxlength="1" inputmode="numeric" pattern="[0-9]"
+          style="width:44px;height:52px;text-align:center;font-size:1.4rem;font-weight:700;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);border-radius:8px;color:#fff;outline:none;transition:border-color .2s"
+          onfocus="this.style.borderColor='#c9a84c'"
+          onblur="this.style.borderColor='rgba(255,255,255,.15)'"
+          required>
+        
+        <input type="text" name="d3" id="d3"
+          maxlength="1" inputmode="numeric" pattern="[0-9]"
+          style="width:44px;height:52px;text-align:center;font-size:1.4rem;font-weight:700;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);border-radius:8px;color:#fff;outline:none;transition:border-color .2s"
+          onfocus="this.style.borderColor='#c9a84c'"
+          onblur="this.style.borderColor='rgba(255,255,255,.15)'"
+          required>
+        
+        <input type="text" name="d4" id="d4"
+          maxlength="1" inputmode="numeric" pattern="[0-9]"
+          style="width:44px;height:52px;text-align:center;font-size:1.4rem;font-weight:700;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);border-radius:8px;color:#fff;outline:none;transition:border-color .2s"
+          onfocus="this.style.borderColor='#c9a84c'"
+          onblur="this.style.borderColor='rgba(255,255,255,.15)'"
+          required>
+        
+        <input type="text" name="d5" id="d5"
+          maxlength="1" inputmode="numeric" pattern="[0-9]"
+          style="width:44px;height:52px;text-align:center;font-size:1.4rem;font-weight:700;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);border-radius:8px;color:#fff;outline:none;transition:border-color .2s"
+          onfocus="this.style.borderColor='#c9a84c'"
+          onblur="this.style.borderColor='rgba(255,255,255,.15)'"
+          required>
+        
+        <input type="text" name="d6" id="d6"
+          maxlength="1" inputmode="numeric" pattern="[0-9]"
+          style="width:44px;height:52px;text-align:center;font-size:1.4rem;font-weight:700;background:#1a1a1a;border:1.5px solid rgba(255,255,255,.15);border-radius:8px;color:#fff;outline:none;transition:border-color .2s"
+          onfocus="this.style.borderColor='#c9a84c'"
+          onblur="this.style.borderColor='rgba(255,255,255,.15)'"
+          required>
+        
+      </div>
+      <button type="submit" class="btn-gold" style="width:100%;padding:.9rem;font-size:.95rem">
+        Verify & Log In →
+      </button>
+    </form>
+
+    <div style="text-align:center;margin-top:1.5rem">
+      <form method="POST" id="resendForm" style="display:inline">
+        <button type="submit" style="background:none;border:none;color:rgba(255,255,255,.4);font-size:.82rem;cursor:pointer;text-decoration:underline">
+          Didn't receive the code? Resend
+        </button>
+      </form>
+    </div>
+
+    <p style="text-align:center;margin-top:.75rem;font-size:.8rem">
+      <a href="login.html" style="color:rgba(255,255,255,.3)">← Back to login</a>
+    </p>
+  </div>
+</div>
+
+<script>
+// Auto-focus volgende veld bij invoer
+const inputs = document.querySelectorAll('#codeForm input[type="text"]');
+inputs.forEach(function(input, idx) {
+  input.addEventListener('input', function() {
+    this.value = this.value.replace(/[^0-9]/g, '');
+    if (this.value.length === 1 && idx < inputs.length - 1) {
+      inputs[idx + 1].focus();
+    }
+  });
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Backspace' && !this.value && idx > 0) {
+      inputs[idx - 1].focus();
+    }
+  });
+  // Paste handler — vul alle vakjes in één keer
+  input.addEventListener('paste', function(e) {
+    e.preventDefault();
+    const pasted = (e.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '');
+    pasted.split('').forEach(function(char, i) {
+      if (inputs[i]) inputs[i].value = char;
+    });
+    if (inputs[pasted.length - 1]) inputs[pasted.length - 1].focus();
+  });
+});
+// Auto-submit als alle 6 vakjes gevuld zijn
+inputs[inputs.length - 1].addEventListener('input', function() {
+  if ([...inputs].every(i => i.value)) {
+    document.getElementById('codeForm').requestSubmit();
+  }
+});
+</script>
+
+<script src="static/js/main.js"></script>
+<script src="static/js/supabase.js"></script>
+<script src="static/js/config.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>
